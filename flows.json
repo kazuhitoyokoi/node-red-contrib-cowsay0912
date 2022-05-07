@@ -30,9 +30,9 @@
         ],
         "env": [],
         "meta": {
-            "module": "node-red-contrib-cowsay",
+            "module": "node-red-contrib-cowsay0912",
             "type": "cowsay",
-            "version": "4.5.1",
+            "version": "0.0.1",
             "author": "Kazuhito Yokoi <kazuhitoyokoi@nodered.jp>",
             "desc": "A node to generate ascii art using cowsay module",
             "keywords": "node-red,cowsay",
