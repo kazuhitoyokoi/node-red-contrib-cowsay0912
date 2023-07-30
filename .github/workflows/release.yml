@@ -18,9 +18,9 @@ jobs:
           cat package.json | jq ".bugs.url|=\"https://github.com/$GITHUB_ACTOR\"" > tmp; mv tmp package.json
           mv ../examples . || true
           mv ../README.md . || true
-        #  npm publish
-        #env:
-        #  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
